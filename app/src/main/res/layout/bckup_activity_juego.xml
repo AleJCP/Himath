@@ -1,0 +1,201 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_editor_absoluteX="0dp"
+    app:layout_editor_absoluteY="250dp"
+    tools:context=".juego">
+
+    <ImageButton
+        android:id="@+id/Exitbutton"
+        android:layout_width="45dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="11dp"
+        android:background="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/progressBargame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_close" />
+
+    <ProgressBar
+        android:id="@+id/progressBargame"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:progressDrawable="@drawable/customprogresbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Exitbutton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Selecciona la respuesta correcta"
+        android:textColor="@color/TextPrimary"
+        android:autoSizeTextType="uniform"
+        android:textSize="22sp"
+        android:autoSizeMinTextSize="15sp"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ToggleButton
+        android:id="@+id/optButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginRight="69dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_togglebtn"
+        android:text="ToggleButton"
+        android:textColor="@color/TextPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/optButton3"
+        app:layout_constraintEnd_toEndOf="@+id/optButton4"
+        app:layout_constraintStart_toStartOf="@+id/textView2" />
+
+    <ToggleButton
+        android:id="@+id/optButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_togglebtn"
+        android:text="5"
+        android:textColor="@color/TextPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/optButton5"
+        app:layout_constraintEnd_toEndOf="@+id/optButton5"
+        app:layout_constraintStart_toStartOf="@+id/optButton4" />
+
+    <ToggleButton
+        android:id="@+id/optButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/bg_togglebtn"
+        android:text="ToggleButton"
+        android:textColor="@color/TextPrimary"
+        app:layout_constraintBottom_toBottomOf="@+id/optButton5"
+        app:layout_constraintEnd_toStartOf="@+id/optButton4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/optButton5" />
+
+    <ToggleButton
+        android:id="@+id/optButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:background="@drawable/bg_togglebtn"
+        android:text="ToggleButton"
+        android:textColor="@color/TextPrimary"
+        app:layout_constraintEnd_toStartOf="@+id/optButton5"
+        app:layout_constraintStart_toEndOf="@+id/optButton3"
+        app:layout_constraintTop_toBottomOf="@+id/optButton1" />
+
+    <ToggleButton
+        android:id="@+id/optButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="107dp"
+        android:background="@drawable/bg_togglebtn"
+        android:text="ToggleButton"
+        android:textColor="@color/TextPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/optButton4" />
+
+    <TextView
+        android:id="@+id/tvProblem"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginRight="130dp"
+        android:text="5 + 5 = ?"
+        android:textColor="@color/colorPrimary"
+        android:autoSizeTextType="uniform"
+        android:textSize="40sp"
+        android:autoSizeMinTextSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <ToggleButton
+        android:id="@+id/buttonComprobar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/bg_round_button"
+        android:text="Comprobar"
+        android:textOn="Comprobar"
+        android:textOff="Comprobar"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optButton3" />
+
+    <LinearLayout
+        android:id="@+id/textlinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="155dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonComprobar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Respuesta Correcta"
+            android:textColor="@color/correctText"
+            android:autoSizeTextType="uniform"
+            android:textSize="20sp"
+            android:autoSizeMinTextSize="16sp"
+            app:fontFamily="@font/pacifico"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

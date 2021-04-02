@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Shop_Fragment">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whithe"
+            android:fillViewport="true"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/contenedor_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/shop_msg"
+                    android:padding="15dp"
+                    android:text="¡Aquí puedes comprar objetos útiles para jugar!"
+                    android:textColor="@color/whithe"
+                    android:textSize="35dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- Element 1 -->
+
+                <LinearLayout
+                    android:id="@+id/dos_vidas_mas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/msg"
+                    android:padding="20dp"
+                    android:background="@drawable/shop_button_bg">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/ic_heart_plus"
+                        />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2 Vidas Extra"
+                        android:textColor="@color/TextPrimary"
+                        android:textSize="20sp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Te ayudarán para avanzar más en los juegos, tendrás más oportunidad de cometer errores"
+                        android:textColor="@color/TextPrimary"
+                        android:textSize="15sp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="4dp"
+                        >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Precio:"
+                        android:textColor="@color/TextPrimary"
+                        android:textSize="15sp"
+                        />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 20"
+                            android:textColor="@color/money"
+                            android:textSize="15sp"
+                            />
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/ic_money"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+                <!-- Element 2 -->
+
+                <LinearLayout
+                    android:id="@+id/vidas_inf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/dos_vidas_mas"
+                    android:padding="20dp"
+                    android:background="@drawable/shop_button_bg">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/ic_heart_blue"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Vidas Infinitas"
+                            android:textColor="@color/TextPrimary"
+                            android:textSize="20sp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tendrás vidas infinitas durante un periodo corto de tiempo"
+                            android:textColor="@color/TextPrimary"
+                            android:textSize="15sp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Precio:"
+                                android:textColor="@color/TextPrimary"
+                                android:textSize="15sp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 150"
+                                android:textColor="@color/money"
+                                android:textSize="15sp"
+                                />
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/ic_money"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Element 3 -->
+
+                <LinearLayout
+                    android:id="@+id/elemt_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/vidas_inf"
+                    android:padding="20dp"
+                    android:background="@drawable/shop_button_bg">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/ic_tesoro_closed"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cofre del Tesoro"
+                            android:textColor="@color/TextPrimary"
+                            android:textSize="20sp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="¡Es un cofre del tesoro! Cualquier cosa podría estar dentro..., ¿Que esperas?"
+                            android:textColor="@color/TextPrimary"
+                            android:textSize="15sp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Precio:"
+                                android:textColor="@color/TextPrimary"
+                                android:textSize="15sp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 300"
+                                android:textColor="@color/money"
+                                android:textSize="15sp"
+                                />
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/ic_money"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Element 3 -->
+
+                <LinearLayout
+                    android:id="@+id/elemt_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/elemt_3"
+                    android:padding="20dp"
+                    android:background="@drawable/shop_button_bg">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/ic_key"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Llave Común"
+                            android:textColor="@color/TextPrimary"
+                            android:textSize="20sp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="LLave común que abre cualquier cofre..."
+                            android:textColor="@color/TextPrimary"
+                            android:textSize="15sp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="4dp"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Precio:"
+                                android:textColor="@color/TextPrimary"
+                                android:textSize="15sp"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" 10"
+                                android:textColor="@color/money"
+                                android:textSize="15sp"
+                                />
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/ic_money"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Margen Inferior,
+            Recuerda Hacer el Constraint con el ultimo elemento del SCROLL o DEL FRAME-->
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@color/whithe"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/elemt_4"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </FrameLayout>

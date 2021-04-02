@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/whithe"
+    android:padding="15dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+    <TextView
+        android:id="@+id/tv1_dialog_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¡Felicitaciones! has conseguido el logro"
+        android:textColor="@color/TextPrimary"
+        android:textSize="15sp" />
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/tv1_dialog_logro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fiebre de oro"
+                android:textColor="@color/TextPrimary"
+                android:textSize="22sp" />
+
+
+            <ImageView
+                android:id="@+id/imageoflogro"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/ic_money_bag" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv1_dialog_inf1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Has obtenido 100"
+                android:textColor="@color/money"
+                android:textSize="15sp" />
+
+
+            <ImageView
+                android:id="@+id/imageofcoins"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/ic_money" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_button"
+            android:textColor="@color/whithe"
+            android:text="OK"
+            android:layout_gravity="center"
+            />
+
+
+
+    </LinearLayout>
+</LinearLayout>

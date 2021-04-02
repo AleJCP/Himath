@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Games_Fragment">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whithe"
+        tools:context=".MainActivity"
+        android:fillViewport="true"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contenedor_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_jugar"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/btn_jugar_resta"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintDimensionRatio="1.1"
+                android:background="#19A05F"
+                app:srcCompat="@drawable/ic_signo_de_mas"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_jugar_resta"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginRight="39dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_jugar"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintDimensionRatio="1.1"
+                android:background="#650CA8"
+                app:srcCompat="@drawable/ic_simbolo_menos"
+
+                />
+
+            <ImageButton
+                android:id="@+id/btn_jugar_multi"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/btn_jugar_divi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_jugar"
+                app:layout_constraintDimensionRatio="1.1"
+                android:background="#FECD43"
+                app:srcCompat="@drawable/ic_signo_de_multiplicacion"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_jugar_divi"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginRight="39dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_jugar_multi"
+                app:layout_constraintTop_toBottomOf="@+id/btn_jugar_resta"
+                app:layout_constraintDimensionRatio="1.1"
+                android:background="#FC4843"
+                app:srcCompat="@drawable/ic_simbolo_de_division"
+                />
+
+
+
+            <ImageButton
+                android:id="@+id/btn_extra1"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+
+                android:layout_marginStart="42dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_extra2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_jugar_multi"
+                app:layout_constraintDimensionRatio="1.1"
+                android:background="#828282"
+                app:srcCompat="@drawable/ic_baseline_candado"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_extra2"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginRight="39dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btn_extra1"
+                app:layout_constraintTop_toBottomOf="@+id/btn_jugar_divi"
+                app:layout_constraintDimensionRatio="1.1"
+                android:background="#828282"
+                app:srcCompat="@drawable/ic_baseline_candado"
+
+                />
+
+
+
+
+            <!-- Margen Inferior,
+            Recuerda Hacer el Constraint con el ultimo elemento
+            del CONTENIDO-->
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/whithe"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_extra2"
+                />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

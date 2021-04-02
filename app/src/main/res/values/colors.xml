@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0099ff</color>
+    <color name="colorPrimaryDark">#0099ff</color>
+    <color name="TextPrimary">#212F3C</color>
+    <color name="colorAccent">#0099ff</color>
+    <color name="colorAccent2">#9C9C9C</color>
+    <color name="whithe">#FFF</color>
+    <color name="correct">#8ee000</color>
+    <color name="correctText">#70970c</color>
+    <color name="incorrect">#e53838</color>
+    <color name="incorrectText">#a00000</color>
+    <color name="toolbar">#F2F2F2</color>
+    <color name="money">#FECD43</color>
+    <color name="lives">#FC4843</color>
+    <color name="desbloqueable1">#F169A9</color>
+
+
+</resources>

@@ -1,0 +1,266 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whithe"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_alignParentTop="true"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_editor_absoluteX="0dp"
+    app:layout_editor_absoluteY="250dp"
+    tools:context=".lvl_complete"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+
+
+
+
+            <LinearLayout
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/Exitbutton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#FFF"
+                    app:srcCompat="@drawable/ic_baseline_close" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:text="Acerca de HiMath"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+            <LinearLayout
+                android:id="@+id/logoApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/tv2">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_maths" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/caja1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/logoApp">
+
+                <TextView
+                    android:id="@+id/Q1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingTop="10dp"
+                    android:text="¿Qué es?"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp" />
+                <TextView
+                    android:id="@+id/A1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="HiMath Es un juego didáctico para niños y adultos, para ejercitar la agilidad mental mediante la resolución de operaciones básicas."
+                    android:textSize="15sp"
+                     />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/caja2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/caja1">
+
+                <TextView
+                    android:id="@+id/Q2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingTop="10dp"
+                    android:text="Colaboraciones"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:id="@+id/cajaLogos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+                    <LinearLayout
+                        android:id="@+id/cajaLogo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="left"
+                        app:srcCompat="@drawable/unefa_logo"
+                        />
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cajaLogo3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="10dp"
+                        >
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+
+                            app:srcCompat="@drawable/ajds_logo"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/A2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Esta versión del juego fue creada con propósitos educativos y sin animos de lucro, para cumplir con el deber de dejar algo a la comunidad del Antonio Jose de Sucre Sector 2, Calle Central para optar por el Título de Ingeniero de Sistemas en la casa de estudios UNEFA."
+                    android:textSize="15sp"
+                     />
+                <TextView
+                    android:id="@+id/A3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left"
+                    android:text="Colaboradores de proyecto comunitario:"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/A31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left"
+                    android:text="Jose Maldonado"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/A32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left"
+                    android:text="Luis De Avila"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/A4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left"
+                    android:text="Desarrollador/Diseñador de la Aplicación:"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/A41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left"
+                    android:text="Alejandro Chiquito"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/A5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="TODOS los iconos fueron realizados por Freepik de www.flaticon.com "
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+    </ScrollView>
+

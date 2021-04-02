@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/whithe">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione una dificultad"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="10dp">
+
+    <Button
+        android:id="@+id/btnfacil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round_button"
+        android:textColor="@color/whithe"
+        android:text="Facil"
+        android:layout_margin="3dp"/>
+    <Button
+        android:id="@+id/btnnormal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round_button"
+        android:textColor="@color/whithe"
+        android:text="Normal"
+        android:layout_margin="3dp"/>
+    <Button
+        android:id="@+id/btndificil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round_button"
+        android:textColor="@color/whithe"
+        android:text="Dificil"
+        android:layout_margin="3dp"/>
+
+
+</LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,279 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whithe"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_alignParentTop="true"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_editor_absoluteX="0dp"
+    app:layout_editor_absoluteY="250dp"
+    tools:context=".lvl_complete"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+
+
+
+
+            <LinearLayout
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/Exitbutton"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#FFF"
+                    app:srcCompat="@drawable/ic_baseline_close" />
+
+            </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/Q1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="¿Cómo Jugar?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+            <LinearLayout
+                android:id="@+id/logoApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/tv2">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_maths" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/caja1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/logoApp">
+
+                <TextView
+                    android:id="@+id/A1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="HiMath Es un juego didáctico para niños y adultos, para ejercitar la agilidad mental mediante la resolución de operaciones básicas."
+                    android:textSize="15sp"
+                     />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/caja2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/caja1">
+
+                <TextView
+                    android:id="@+id/Q2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="Pantalla de Inicio"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp" />
+
+
+                <LinearLayout
+                    android:id="@+id/cajaLogos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/A2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left"
+                    android:text="Esta pantalla se divide en tres partes fundamentales, la barra de inicio, la pantalla de acción y el menu inferior."
+                    android:textSize="15sp"
+                     />
+                <TextView
+                    android:id="@+id/A3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left"
+                    android:text="La Barra de Inicio se encuentran las monedas, vidas que posees y cuando no tienes vidas, aparece un cronometro para recargar tus vidas cada dos (2) Minutos."
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/A31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left"
+                    android:text="En la pantalla de accion se muestra la pantalla que escojas a través del menu inferior."
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/Q3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Pantalla de Juegos"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp" />
+
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/pantalla1"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/A32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left"
+                    android:text="En esta Pantalla se muestran todos los niveles disponibles, hasta el momento hay 6 niveles disponibles en todo el juego."
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/Q4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Pantalla de Perfil"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/pantalla2"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/A4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left"
+                    android:text="En esta pantalla puedes colocar tu nombre y puedes vizualizar tus logros."
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/Q5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Pantalla de Tienda"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="300dp"
+                    app:srcCompat="@drawable/pantalla3"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/A41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="left"
+                    android:text="En esta pantalla puedes usar tus monedas para conseguir poderes que te serviran para avanzar en el juego."
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/A5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="Hasta ahora esto es todo, Pueden haber mejoras significativas en el juego en un Futuro..."
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+    </ScrollView>
+
